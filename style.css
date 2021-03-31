@@ -1,0 +1,17 @@
+.container{
+    /*outline: yellow dotted 1px;*/
+    width: 970px;
+    height:300px;
+    margin: 10px 10px 10px 10px;
+    border-bottom: black solid 1px;
+
+    }
+h1{
+    /*outline: red dotted 1px;*/
+ 
+}
+button{
+    /*outline: blue dotted 1px;*/
+    margin: auto;
+
+}

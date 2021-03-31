@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My jQuery basic assignment!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        $(document).ready(function() {
+            $('.btn').click(() => {
+                alert('Se ha hecho click en el botón!');
+            })
+            $('.hide-btn').click(()=> {
+                $('.hideshowp').hide();
+            })
+            $('.show-btn').click( () =>{
+                $('.hideshowp').show();
+            })
+            $('.toggle-btn').click(()=> {
+                $('.togglep').toggle();
+            })
+            $('.slideUp-btn').click(() =>{
+                $('.slidep').slideUp();
+            })
+            $('.slideDown-btn').click(() =>{
+                $('.slidep').slideDown();
+            })
+
+            $('.slideToggle-btn').click(() =>{
+                $('.slidep').slideToggle();
+            })
+
+            $('.fadeOut-btn').click(() =>{
+                $('.fadep').fadeOut();
+            })
+            $('.fadeIn-btn').click(() =>{
+                $('.fadep').fadeIn();
+            })
+            $('.addred-btn').click(function() {
+                $('.addp').addClass('red');
+            })
+            $('.before-btn').click(function() {
+                $('.p').before('<p>add a paragraph before</p>');
+            })
+            $('.after-btn').click(function() {
+                $('.p').after('<p>add a paragraph after</p>');
+            })
+            $('.append-btn').click (function() {
+                $('.appendp').append('text append');
+            })
+            $('.html-btn').click(function() {
+                $('.htmlp').html('<h1>add a new paragraph</h1>');
+            })
+            $('.attr-btn').click(function() {
+                alert($('#attrinput').attr('placeholder'));
+            })
+            $('.val-btn').click(function() {
+                alert($('.valinput').val());
+            })
+            $('.tex-tbtn').click(function() {
+                alert($('.textp').text());
+            })
+        });
+        
+    </script>
+</head>
+
+    <body>
+        <div class="container">
+            <h1>.click</h1>
+            <button class="btn">Click</button>
+        </div>
+
+        <div class="container">
+            <h1>.hide / .show</h1>
+            <button class="hide-btn">Hide</button>
+            <button class="show-btn">Show</button>
+            <p class="hideshowp">Click the button to hide and show a image</p>
+        </div>
+
+        <div class="container">
+            <h1>.toggle</h1>
+            <button class="toggle-btn">Toggle</button>
+            <p class="togglep">Click the button to toggle a image </p>
+        </div>
+
+        <div class="container">
+            <h1>.slideUp /.slideDown /.slideToggle</h1>
+            <button class="slideUp-btn">SlideUP</button>
+            <button class="slideDown-btn">SlideDOWN</button>
+            <button class="slideToggle-btn">Slide TOGGLE</button>
+            <p class="slidep">Click the button to slideup, slidedown and slidetoggle a hidden image </p>
+        </div>
+        <div class="container">
+            <h1>.fadeIn / .fadeOut</h1>
+            <button class="fadeOut-btn">FadeOut</button>
+            <button class="fadeIn-btn">FadeIn</button>
+            <p class="fadep">Click the button to fadein and fadeOut a image</p>
+        </div>
+
+        <div class="container">
+            <h1>.addClass</h1>
+            <button class="addred-btn">addClass</button>
+            <p class="addp">Click the button to add class 'red' to this paragraph </p>
+        </div>
+
+        <div class="container">
+            <h1>.before/ .after</h1>
+            <button class="before-btn">addBefore</button>
+            <button class="after-btn">addAfter</button>
+            <p class="p">Click the button to add before and after a paragraph</p>
+        </div>
+        
+        <div class="container">
+            <h1>.Append</h1>
+            <button class="append-btn">Append</button>
+            <p class="appendp">Click the button to append a new paragraph </p>
+        </div>
+
+        <div class="container">
+            <h1>.html</h1>
+            <button class="html-btn">HTML</button>
+            <p class="htmlp">Click the button to change into a new paragraph </p>
+        </div>
+
+        <div class="container">
+            <h1>.attr</h1>
+            <button class="attr-btn">Get attr placeholder</button>
+            <input class="attrinput" type="text" placeholder="Ingresa tu Nombre">
+        </div>
+
+        <div class="container">
+            <h1>.val</h1>
+            <button class="val-btn">Get the value</button>
+            <input class="valinput" type="number" value="4">
+        </div>
+
+        <div class="funcion">
+            <h1>.text</h1>
+            <button class="text-btn">TEXT</button>
+            <input class="textinput" type="text">
+            <p class="textp">Click button to get text</p>
+
+    </body>
+</html
